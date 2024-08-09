@@ -1,13 +1,16 @@
-lunch
+tasty_lunch
 dinner
 editthe code
 the new cose
 defination
 localdata
 argument
-newtodos
+tasty_lunch
 new page
 new file path
-meeting with rene
-newtodo
+clean the car
+oldtodo
 key
+nomeetingtoday
+new_todo_check_add
+new to do check
