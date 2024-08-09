@@ -1,3 +1,4 @@
+'''
 length = int(input("enter length"))
 width = int(input("enter width"))
 height= int(input("enter height"))
@@ -14,5 +15,6 @@ def farenheit(celsius):
 
 print("the farenheit value is" + str(celsius) + "degree is" + str(farenheit(celsius)))
 
+'''
 
 

@@ -1,13 +1,13 @@
 
-filepath = "files/todos.txt"
-def get_todos(filepath=filepath):
+FILEPATH = "files/todos.txt"
+def get_todos(filepath=FILEPATH):
     """ Read a text file and return the lis of todo items""" # documentation strings
     with open(filepath, "r") as file_local:
         todos_local = file_local.readlines()
     return todos_local
 
 
-def write_todos(todos_arg, filepath=filepath):
+def write_todos(todos_arg, filepath=FILEPATH):
     with open(filepath, "w") as file:
         file.writelines(todos_arg)
 

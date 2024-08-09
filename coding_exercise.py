@@ -266,9 +266,9 @@ rand = random.randint(parsed['lower_bound'], parsed['upper_bound'])
 
 print(rand)
 '''
-
+import re
 def sp_number(user_input):
-    user_input = user_input.split(",")
+    user_input = user_input.split(',')
     lower = int(user_input[0])
     upper = int(user_input[1])
     return lower, upper
@@ -279,7 +279,16 @@ spl_number = sp_number(user_input)
 rand = random.randint(spl_number[0], spl_number[1])
 print(rand)
 
+import re
+input_string = "1, 2, 3 4,5 6"
 
+# Split the string using comma or space as delimiters
+numbers = re.split(r'[,\s]+', input_string)
+
+# Convert the split strings to integers
+numbers = [int(num) for num in numbers if num]
+
+print(numbers)
 
 
 
