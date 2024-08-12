@@ -13,6 +13,7 @@ choose_button2 = sg.FolderBrowse("choose", key="folder")
 
 extract_button = sg.Button("extract")
 output_label = sg.Text(key="output")
+exit_button = sg.Button("Exit")
 
 window = sg.Window("Zip Extractor",
                    layout=[[label1, input1, choose_button1],
