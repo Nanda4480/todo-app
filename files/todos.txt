@@ -5,11 +5,6 @@ the new cose
 defination
 localdata
 argument
-tasty_lunch
-new page
-new file path
-clean the car
-oldtodo
-nomeetingtoday
-drinking tea
+
+
 

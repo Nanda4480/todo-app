@@ -3,6 +3,11 @@ from todo_function import get_todos, write_todos
 import functions
 import FreeSimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w") as file:
+        pass
 
 sg.theme('DarkAmber')
 
