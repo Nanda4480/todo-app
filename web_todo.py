@@ -1,7 +1,9 @@
+import streamlit
+
+
+
 import streamlit as st
 import functions
-
-
 
 
 FILEPATH = "files/todos.txt"
@@ -27,9 +29,15 @@ st.subheader("This is a todo app")
 st.write("this app will help you for the day's reminders")
 
 cnt = 0
-for todo in get_todos():
+for index, todo in enumerate(get_todos()):
     cnt += 1
-    st.checkbox(todo, key=cnt)
+    #checkbox = st.checkbox(todo, key=cnt)
+    checkbox = st.checkbox(todo, key=todo)
+    if checkbox:
+        todos.pop(index)
+        write_todos(todos)
+        del st.session_state[todo]
+        st.experimental_fragment()
 
 
 st.text_input(label="", placeholder="Add new todo...",
