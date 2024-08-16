@@ -76,6 +76,7 @@ print(vehicles)
 vehicles.setdefault("MG", "Hector")
 print(vehicles)
 
+
 vehicles = ("tata", "nexon", "ford", "figo", "huyndai", "I10", "honda", "jazz", "kia", "zika")
 count = 0
 while count < len(vehicles):
@@ -99,6 +100,11 @@ print(common)
 VEHICLES = {char.upper() for char in "i learning python"}
 print(VEHICLES)
 
+
+menu = {"food": 10, "bread": 20, "hot": 30, "meat": 15, "soup": 10}
+menu.update({"drink": 14})
+print(len(menu))
+print(menu)
 
 
 

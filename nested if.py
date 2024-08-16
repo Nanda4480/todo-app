@@ -194,6 +194,7 @@ place = input("please enter your place")
 print("{} is the name{},  and lived in {}".format(name, age, place))
 '''
 
+''''
 import FreeSimpleGUI as sg
 
 # Prepare the widgets for the left column
@@ -216,6 +217,37 @@ window = sg.Window('Columns', layout)
 window.read()
 window.close()
 
+'''
+'''
+while True:
+    password = input("Enter password")
 
+    while password != "pass1":
+        password = input("enter password: ")
 
+print("pw is correct")
 
+'''
+'''
+usernames = ["nanda", "usha", "udi"]
+for usernames in usernames:
+    print(usernames)
+'''
+
+'''
+number1 = int(input("please enter your first number"))
+number2 = int(input("please enter your second number"))
+
+if number1 - number2 >0:
+    print(number1-number2)
+else:
+    print(number2-number1)
+'''
+
+'''
+number= int(input("please enter your number"))
+if number % 2 == 0:
+    print("even")
+else:
+    print("odd")
+'''

@@ -82,9 +82,18 @@ import shutil
 shutil.make_archive("all", "zip", "files")
 '''
 
+'''
+# search in google
 import webbrowser
 user_input = input("Enter search term: ").replace(" ", "+")
 webbrowser.open("https://www.google.com/search?q=" + user_input)
+'''
+
+def doller_add(money):
+    return '$' + str(money)
+
+money = 15
+print(doller_add(money))
 
 
 

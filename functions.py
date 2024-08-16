@@ -17,4 +17,9 @@ print("the farenheit value is" + str(celsius) + "degree is" + str(farenheit(cels
 
 '''
 
+def convert_temp(celsius):
+    calc = celsius * 1.8
+    return (calc + 32)
 
+celsius = 12
+print(convert_temp(celsius))
