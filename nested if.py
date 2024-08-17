@@ -251,3 +251,97 @@ if number % 2 == 0:
 else:
     print("odd")
 '''
+
+'''
+age = int(input("please enter your age"))
+if age > 18:
+    print("eligible for vote")
+else:
+    print("not eligible for vote")
+'''
+
+'''
+marks = int(input("please enter your marks"))
+if marks >= 0 and marks <= 100:
+    print("valid marks")
+else:
+    print("invalid marks")
+'''
+
+'''
+gender = input("please enter your gender")
+if gender == "m" or gender == "M":
+    print("male")
+elif gender == "f" or gender == "F":
+    print("female")
+else:
+    print("invalid gender")
+'''
+
+'''
+age = int(input("please enter your age"))
+if age >=18 and age <=60:
+    print("eligible age")
+else:
+    print("not eligible age")
+'''
+
+'''
+math = int(input("please enter your math"))
+physics = int(input("please enter your physics"))
+chemistry = int(input("please enter your chemistry"))
+
+if math >= 45 and physics >= 45 and chemistry >= 45:
+    print("pass")
+else:
+    print("fail")
+    '''
+'''
+user = input("please enter your name")
+if user == "john" or user == "smith":
+    print("admin")
+else:
+    print("not admin")
+'''
+'''
+letter = input("please enter your letter")
+if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+    print("vowel")
+else:
+    print("not vowel")
+    '''
+
+'''
+john = float(input("please enter john age"))
+smith = float(input("please enter smith age"))
+ajay = float(input("please enter ajay age"))
+
+if john > smith and john > ajay:
+    print("john is eldest")
+elif smith > john and smith > ajay:
+    print("smith is elder")
+else:
+    print("ajay elder")
+    '''
+
+'''
+bill_amount = float(input("please enter bill amount: "))
+if bill_amount <= 1000:
+    bill_amount = bill_amount * 0.9
+elif bill_amount < 1000 and bill_amount <= 5000:
+    bill_amount = bill_amount * 0.8
+elif bill_amount < 5000 and bill_amount <= 10000:
+    bill_amount = bill_amount * 0.7
+else:
+    bill_amount = bill_amount * 0.5
+print(bill_amount)
+'''
+
+'''
+year = int(input("please enter year"))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print("leap year")
+else:
+    print("not leap year")
+    '''
+
