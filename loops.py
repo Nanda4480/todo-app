@@ -133,6 +133,7 @@ while number > 0:
     bin = str(reminder) + bin
 print(bin)
 '''
+'''
 #guess a number between 1 -10
 import random
 number = random.randint(1, 10)
@@ -147,5 +148,91 @@ while guess != number:
     else:
         print("Guess right")
 print(number)
+'''
+
+'''
+#continue statement in loop
+count = 0
+while count < 10:
+    number = int(input("Enter a number: "))
+    if number % 3 == 0:
+        continue
+    print(number)
+    count += 1
+'''
+
+'''
+#use pass statement
+count = 0
+while count < 10:
+    number = int(input("Enter a number: "))
+    if number % 3 == 0:
+        pass
+    else:
+        print(number)
+    count += 1
+'''
+'''
+#for loop
+number = int(input("Enter a number: "))
+for count in range(1, 11):
+    print(number, 'X', count,'=', number*count)
+    '''
+'''
+#factorial
+number = int(input("Enter a number: "))
+
+fact = 1
+for count in range(1, number+1):
+    fact = fact * count
+print(count, fact, end=' ')
+'''
+'''
+#print n terms of AP series- arithmetic series
+
+a = int(input("Enter start number: "))
+d = int(input("Enter difference: "))
+n = int(input("Enter number of terms: "))
+
+for term in range(a, a+n*d, d):
+    print(term)
+'''
+'''
+#fibonacci series
+
+n = int(input("Enter no of terms : "))
+a = 0
+b = 1
+for item in range(n):
+    print(a)
+    c = a + b
+    a = b
+    b = c
+'''
+'''
+#factors of a number
+n = int(input("Enter no of terms : "))
+
+for item in range(1, n+1):
+    if n % item == 0:
+        print(item)
+'''
+
+#check prime number
+count = 0
+n = int(input("Enter no of terms : "))
+for item in range(1, n+1):
+    if n % item == 0:
+        count += 1
+if count == 2:
+    print('prime')
+else:
+    print('not prime')
+
+
+
+
+
+
 
 
