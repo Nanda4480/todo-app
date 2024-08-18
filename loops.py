@@ -218,6 +218,7 @@ for item in range(1, n+1):
         print(item)
 '''
 
+'''
 #check prime number
 count = 0
 n = int(input("Enter no of terms : "))
@@ -228,6 +229,34 @@ if count == 2:
     print('prime')
 else:
     print('not prime')
+'''
+'''
+#nested loop
+for i in range(0, 5):
+    for j in range(0, 5):
+        print('(',i, j,')', end=' ')
+    print('')
+'''
+'''
+s1 = 'abc'
+s2 = 'xyz'
+
+for i in s1:
+    for j in s2:
+        print(i, j, end=' ')
+    print('')
+'''
+'''
+#print prime number 1-100
+
+for n in range (1, 100+1):
+    count = 0
+    for item in range(1, n+1):
+        if n % item == 0:
+            count += 1
+    if count == 2:
+        print(n, 'prime')
+'''
 
 
 
