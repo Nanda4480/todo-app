@@ -96,7 +96,7 @@ print(l8)
 l8.sort(key=str.lower)
 print(l8)
 '''
-
+'''
 l1 = []
 for items in range(10):
     l1.append(items)
@@ -120,4 +120,34 @@ l6 = data.split()
 print(data)
 type(data)
 print(type(data))
+'''
+'''
+#matrix
+a = [[1,2,3],[4,5,6],[7,8,9]]
+b = [[9,8,7],[6,5,4],[3,2,1]]
+
+c = []
+for i in range(len(a)):
+    s = []
+    for j in range(len(a[0])):
+        s.append(a[i][j] + b[i][j])
+    c.append((s))
+print(c)
+'''
+'''
+#calculate salary, weekly working hours in a list
+
+work_hours = input('enter the work hours, sepeparated by spaace:')
+work_hours = work_hours.split()
+work_hours = [int(x) for x in work_hours]
+
+wage = int(input('enter the wage:'))
+print(f"salary is : {sum(work_hours) * wage}")
+'''
+#removing the duplicates in a list
+
+
+
+
+
 
