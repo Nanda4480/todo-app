@@ -62,6 +62,7 @@ while i < len(l3):
     print(l3[i])
     i+=1
 '''
+'''
 #list methods
 list1 = [1, 2, 3, 4, 5]
 list1.append('a')
@@ -83,5 +84,40 @@ print(list5)
 list5.remove('ddd') # remove the item directly
 print(list5)
 
+list6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+l7 = list6.index(3)
+print(l7)
+list6.sort(reverse=True)
+print(list6)
 
+l8 = ['dd','ss', 'gg', 'AA']
+l8.sort()
+print(l8)
+l8.sort(key=str.lower)
+print(l8)
+'''
+
+l1 = []
+for items in range(10):
+    l1.append(items)
+print(l1)
+
+
+l2 = [item**2 for item in range(10)]
+print(l2)
+
+l3 = [x for x in (10, 5, 7, 8, 12) if x % 2 == 0]
+print(l3)
+
+l4 = [x.lower() for x in 'PytHon']
+print(l4)
+
+l5 = [x for x in 'dsfhkdsf%%4#$$11df' if x.isalpha()]
+print(l5)
+
+data = input('enter the names: ')
+l6 = data.split()
+print(data)
+type(data)
+print(type(data))
 
