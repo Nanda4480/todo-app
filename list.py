@@ -146,8 +146,71 @@ print(f"salary is : {sum(work_hours) * wage}")
 '''
 #removing the duplicates in a list
 
+l1 = [1, 2, 3, 4, 5, 6, 8 , 5 , 4 , 3 , 8 , 9 , 5 ]
+l2 = []
+for item in l1:
+    if item not in l2:
+        l2.append(item)
+print(l2)
+
+l1 = [1, 2, 3, 4, 5, 6, 8 , 5 , 4 , 3 , 8 , 9 , 5 ]
+for item in l1:
+    if item not in l2:
+        l2.remove(item)
+print(l2)
+
+#concatinate all integer from a list to a single number
+list = [1, 2, 3, 4, 5, 6, 8 , 5 , 4, 3 , 8 , 9 , 5 ]
+
+string1 = ''
+for item in list:
+    string1 += str(item)
+print(int(string1))
+
+#Minimum index sum of two lists - identifiying favourite item
+
+fav1 = ['tata', 'maruthi', 'ford', 'mahindra', 'hyundai']
+fav2 = ['ford', 'maruthi', 'tata', 'hyundai', 'mahindra']
+
+index1 = 10
+index2 = 10
+
+for item in range(len(fav1)):
+    index = fav2.index(fav1[item])
+
+    if item + index < index1 + index2:
+        index1 = item
+        index2 = index
+print(fav1[index1], index1+index2)
+
+#overlapping elements of two lists - find common in two lists
+l1 = [4, 5, 22, 55, 44, 23, 55, 64, 3]
+l2 = [55, 44, 33, 43, 1, 4 ,5, 3, 64]
+
+l3 = []
+for item in l1:
+    if item in l2:
+        l3.append(item)
+print(l3)
+
+#find the number of occurances of each item in the list
+l1 = ['a', 'f', 'a', 'b', 'd', 'b', 'c', 'd', 'e', 'b', 'a', 'c' ]
+
+result = []
+for item in l1:
+    if item not in result:
+        result.append(item)
+        count = l1.count(item)
+        result.append(count)
+print(result)
 
 
+#telegram : string to morse code
 
+codes = ['._', '_...', '_._.', '.', '.._.', '__.', '....']
+text = 'gabe'
+morse_str = ''
+for item in text:
+    morse_str += codes[ord(item)-97] + ' '
 
-
+print(morse_str)
