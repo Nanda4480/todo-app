@@ -144,6 +144,8 @@ work_hours = [int(x) for x in work_hours]
 wage = int(input('enter the wage:'))
 print(f"salary is : {sum(work_hours) * wage}")
 '''
+
+'''
 #removing the duplicates in a list
 
 l1 = [1, 2, 3, 4, 5, 6, 8 , 5 , 4 , 3 , 8 , 9 , 5 ]
@@ -214,3 +216,40 @@ for item in text:
     morse_str += codes[ord(item)-97] + ' '
 
 print(morse_str)
+
+#add two matrix
+
+L1 = [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]
+L2 = [[5, 6, 7, 8], [5, 6, 7, 8], [5, 6, 7, 8]]
+
+c_sum = []
+for i in range(3):
+    sum= []
+    for j in range(4):
+        result = L1[i][j] + L2[i][j]
+        sum.append(result)
+    c_sum.append(sum)
+print(c_sum)
+
+'''
+#Transpose of a matrix - row become column and column become row
+L1 = [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]
+
+L2 = []
+for i in range(4):
+    s = []
+    for j in range(3):
+        s.append(L1[j][i])
+    L2.append(s)
+print(L2)
+
+#find the words starting with the given letter in a list
+
+letter = input('enter the letter:')
+cars = ['figo', 'swift', 'thiago', 'aster', 'baleno', 'camry', 'dodge', 'ertiga']
+for item in cars:
+    if item.startswith(letter):
+        print(item)
+        break
+else:
+    print("wrong input")
